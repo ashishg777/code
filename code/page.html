@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title> Khol kr dekho bkls</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 800px; margin: auto; }
+        button { padding: 10px; margin-top: 10px; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid rgb(151, 22, 22); padding: 10px; }
+    </style>
+</head>
+<body bgcolor="grey">
+    <div class="container">
+        <h1>Welcome to Bkls</h1>
+        <p>saalo kaam dhandha nhi hai yhi pr marne aa gye, nallo kaam dhandha kr lo.</p>
+        
+        <h2>Chalo aa hi gye ho toh yha pr haziri laga jao </h2>
+        <form onsubmit="return handleSubmit()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <h2>Chl abb fta ftt isko dba aur jadu dekh</h2>
+        <button onclick="showAlert()">Click Me</button>
+        
+        <h2>aaja nalle tujhe ganje aur afeem ke rate batau </h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Rate</th>
+                <th>Kha milega </th>
+            </tr>
+            <tr>
+                <td>ganja</td>
+                <td>2500</td>
+                <td>kapashra border</td>
+            </tr>
+            <tr>
+                <td>afeem </td>
+                <td>3000</td>
+                <td>ramjas college ke pass</td>
+            </tr>
+        </table>
+        
+        <h2>aaja nalle tujhe video dikhau </h2>
+        <video width="100%" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h2>le beta yeh sunn abb </h2>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("tu itna nalla hai socha nhi tha chutiye");
+        }
+        
+        function handleSubmit() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            alert("Thank you, " + name + "! Your email: " + email + " has been recorded.");
+            return false;
+        }
+    </script>
+</body>
+</html>

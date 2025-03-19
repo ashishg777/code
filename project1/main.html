@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            overflow-x: none;
+            background: #0f2027; 
+            background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+            background: linear-gradient(to right,#0f2027, #203a43, #2c5364);
+            
+        }
+        #navcontainer{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 100vw;
+            height: 50px;
+            background: #4C585B;
+            padding: 10px;  
+            position: relative;
+        }
+        nav{
+            width: 100vw;
+            overflow-x: none ;   
+        }
+        #navlist{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            width: 100%;
+            padding: 10px;
+        }
+        #navlogo{
+            list-style: none  ;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        #navmenu{
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            list-style: none;
+        }
+        #navmenu a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+        .image-size{
+            width: 20px;
+            height: 20px;
+            gap: 5px;
+        }   
+        .footerbox{
+            height: 50px;
+            width: 100%;
+            background: #4C585B;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+        }
+        .footerbox p{
+            color: white;
+            text-align: center;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .contentbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 50%; */
+            height: 100vh;
+        }
+        .content{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 50%; */
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="navcontainer">
+                <nav>
+                    <ul id="navlist">
+                        <li><p id="navlogo">Ashish Gupta</p></li>
+                        <li>
+                            <div id="navmenu">
+                                <a href="#"><img src="home.png" alt="your browser does not support this image" class="image-size"/> Home </a>
+                                <a href="#"><img src="about.png" alt="your browser does not support this image" class="image-size"/> About </a>
+                                <a href="#"><img src="services.png" alt="your browser does not support this image" class="image-size"/> Services </a>
+                                <a href="#"><img src="contact.png" alt="your browser does not support this image" class="image-size"/> Contact </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header> 
+
+        <main>
+            <div class="contentbox">
+                <div class="content">
+                    this is the main content of the website
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footerbox">
+                <p>&copy;  all rights are reserved 2025 , Ashish Gupta. 9953019128</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

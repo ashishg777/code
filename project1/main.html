@@ -11,23 +11,25 @@
             box-sizing: border-box;
         }
         .container{
-            height: 100vh;
-            width: 100vw;
+            width: 98.7vw;
             overflow-x: none;
             background: #0f2027; 
             background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); 
             background: linear-gradient(to right,#0f2027, #203a43, #2c5364);
-            
+            overflow: hidden;
+            margin-right: 10%;
         }
         #navcontainer{
             display: flex;
             justify-content: center;
             align-items:center;
-            width: 100vw;
+            width: 100%;
             height: 50px;
-            background: #4C585B;
+            background: #4C585B; 
             padding: 10px;  
             position: relative;
+            overflow: hidden;
+            margin-right: 10%;
         }
         nav{
             width: 100vw;
@@ -38,7 +40,7 @@
             justify-content: space-between;
             align-items: center;
             list-style-type: none;
-            width: 100%;
+            width: auto;
             padding: 10px;
         }
         #navlogo{
@@ -66,14 +68,16 @@
         }   
         .footerbox{
             height: 50px;
-            width: 100%;
+            width: 100vw;
             background: #4C585B;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: absolute;
+            position: relative;
             bottom: 0;
+            overflow: hidden;
+            margin-right: 10%;
         }
         .footerbox p{
             color: white;
@@ -83,23 +87,100 @@
             align-items: center;
         }
         .contentbox{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* width: 50%; */
-            height: 100vh;
-        }
-        .content{
-            background: white;
-            padding: 20px;
+            width: 60vw;
+            border: 2px solid black;
+            background-color: white;
             border-radius: 10px;
-            box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 40px 2px black;
             display: flex;
             justify-content: center;
             align-items: center;
-            /* width: 50%; */
-            height: 100vh;
+            margin: auto; 
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
         }
+        .item{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .rightbox:hover{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 30px 2px black;
+            border: 1.5px solid black;
+            position: relative;
+            overflow: hidden;
+            transform: scale(1.1);
+            transition: all 0.5s linear 0s;
+        }
+        .rightbox img{
+            width: 200px;
+            height: 200px;
+            box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 1);
+            border-radius: 10px;
+            
+        }
+        .leftbox{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 30px 2px black;
+            border: 1.5px solid black;
+        }
+        .leftbox:hover{
+            transform: scale(1.08);
+            transition: 1s;
+        }
+        .leftbox h2{
+            color: black;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .leftbox ul{
+            list-style-type: square;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        .overlay{
+            display: none;
+            cursor: pointer;
+        }
+        
+        .overlay span{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .rightbox .overlay{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s;
+            color: white;
+            
+        }
+        .rightbox .overlay:hover{
+            opacity: 1;
+            transition: all 0.5s linear 0s;
+        }
+
     </style>
 </head>
 <body>
@@ -120,12 +201,144 @@
                     </ul>
                 </nav>
             </div>
-        </header> 
+        </header>
 
         <main>
             <div class="contentbox">
                 <div class="content">
-                    this is the main content of the website
+
+                    <!-- item 1  -->
+                    <section>
+                        <div class="item">
+                            <div class="leftbox">
+                                <h2>Gulab jamun. </h2>
+                                <div>
+                                    <ul>
+                                        <li>milk</li>
+                                        <li>khoya</li>
+                                        <li>sugar</li>
+                                        <li>oil</li>
+                                    </ul>
+                                </div>
+                                <h2>recipie</h2>
+                                <div>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, ipsa facilis.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="rightbox">
+                                <img src="gulab.jpg" alt="your browser does not support this image"/>
+                                <div class="overlay">
+                                    <span>click here to order now </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- item 2  -->
+                    <section>
+                        <div class="item">
+                            <div class="leftbox">
+                                <h2>Ras Malai. </h2>
+                                <div>
+                                    <ul>
+                                        <li>milk</li>
+                                        <li>khoya</li>
+                                        <li>sugar</li>
+                                        <li>oil</li>
+                                    </ul>
+                                </div>
+                                <h2>recipie</h2>
+                                <div>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, ipsa facilis.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="rightbox">
+                                <img src="ras.jpg" alt="your browser does not support this image"/>
+                                <div class="overlay">
+                                    <span>click here to order now </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- item 3  -->
+                    <section>
+                        <div class="item">
+                            <div class="leftbox">
+                                <h2>Malpua. </h2>
+                                <div>
+                                    <ul>
+                                        <li>milk</li>
+                                        <li>khoya</li>
+                                        <li>sugar</li>
+                                        <li>oil</li>
+                                    </ul>
+                                </div>
+                                <h2>recipie</h2>
+                                <div>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, ipsa facilis.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="rightbox">
+                                <img src="malpua.jpg" alt="your browser does not support this image"/>
+                                <div class="overlay">
+                                    <span>click here to order now </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- item 4 -->
+                    <section>
+                        <div class="item">
+                            <div class="leftbox">
+                                <h2>Laddoo. </h2>
+                                <div>
+                                    <ul>
+                                        <li>milk</li>
+                                        <li>khoya</li>
+                                        <li>sugar</li>
+                                        <li>oil</li>
+                                    </ul>
+                                </div>
+                                <h2>recipie</h2>
+                                <div>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, ipsa facilis.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="rightbox">
+                                <img src="laddo.jpg" alt="your browser does not support this image"/>
+                                <div class="overlay">
+                                    <span>click here to order now </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </div>
         </main>

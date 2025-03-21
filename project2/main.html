@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Website </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent-container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient( 88.5deg,  rgba(89,0,114,1) 50.7%, rgba(0,124,198,1) 129% );
+            overflow-x:hidden;
+        }
+        .container{
+            width: 100vw;
+            height:60px;
+            background-image: linear-gradient( 88.5deg,  rgba(89,0,114,1) 50.7%, rgba(0,124,198,1) 129% );
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        nav{
+            width: 100vw;
+            overflow-x: hidden;
+        }
+        #navlist{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            width: 100vw;
+            overflow-x: hidden;
+            padding: 10px;
+        }
+        #logo{
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            list-style: none;
+        }
+        #navmenu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-right: 20px;
+            overflow-x: hidden;
+        }
+        #navmenu a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            display: flex;
+            font-family: 'Times New Roman', Times, serif;
+            gap: 7px;
+            justify-content: space-between;
+        }
+        #navmenu img{
+            width: 20px;
+            height: 20px;
+        }
+        .card-container{
+            width: 50vh;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 20px 2px black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .card{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            /* border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 1px 1px 20px 1px black; */
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            
+            
+        }
+        .section{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+        }
+        .qr-image{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            border: 2px solid black;
+            /* border-radius: 10px; */
+            justify-content: center;
+            align-items: center;
+        }
+        .qr-image img{
+            width: 70%;
+            height: 70%;
+            border-radius: 10px;
+        }
+        .text{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            border: 2px solid black;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            justify-content: space-between;
+        }
+        .text h1{
+            font-size: 2rem;
+            color: black;
+            font-weight: bold;
+            padding:10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .text p{
+            font-size: 12px;
+            color: black;
+            font-weight: bold;
+            padding:10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        footer{
+            width: 100vw;
+            height:60px;
+            background-image: linear-gradient( 88.5deg,  rgba(89,0,114,1) 50.7%, rgba(0,124,198,1) 129% );
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            bottom: 0;
+        }
+        footer #footertext{
+            font-size: 1rem;
+            color: white;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <header>
+            <div class="container">
+                <nav>
+                    <ul id="navlist">
+                        <li>
+                            <p id = "logo">Card</p>
+                        </li>
+                        <li>
+                            <div id="navmenu">
+                                <a href="#"><img src="home.png" alt="your browser does not support this pic."/> Home </a>
+                                <a href="#"><img src="about.png" alt="your browser does not support this pic."/> About </a>
+                                <a href="#"><img src="services.png" alt="your browser does not support this pic."/> Services </a>
+                                <a href="#"><img src="contact.png" alt="your browser does not support this pic."/> Contact </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="card-container">
+                <div class="card">
+                    <div class="section">
+                        <div class="qr-image">
+                            <img src="qr-code (1).png" alt="this pic is not supported in your browser "/>
+                        </div>
+                        <div class="text"> 
+                            <h1>Scan the QR code to get the details</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore deleniti voluptates consectetur?iusto similique  praesentium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footertext">&copy; 2025 Card. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

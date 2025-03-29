@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <title>Blog Website </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: lightgray;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 70vw;
+            height: 100%;
+            display: flex;
+            /* justify-content: space-between; */
+            padding: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #heading{
+            font-size: 1.5rem;
+        }
+        #desc{
+            width: 50%;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        .grid_container{
+            height: fit-content;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            row-gap: 20px;
+            padding: 10px;
+            column-gap: 10px;
+        }
+        .card{
+            height: 27rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid black ;
+            border-radius: 5px;
+            gap: 10px;
+        }
+        .image_container{
+            height: 16.6rem;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .image_container img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            object-fit:cover;
+        }
+        .para_container{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .para_container a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+        }
+        .para_container a:hover{
+            color: rgb(6, 83, 108);
+        }
+        .para_container p{
+            font-size: 0.8rem;
+        }
+        .avtar_container{
+            width: 100%;
+            display: flex;
+            position: relative;
+            /* align-items: center; */
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .avatar{
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            gap: 10px;
+        }
+        .avtar_image{
+            width: 2rem;
+            height: 2.05rem;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: aquamarine;
+        }
+        .avatar_text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #para_avtar{
+            font-size: 0.7rem;
+        }
+        .avatar_container_text{
+            height: fit-content;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 id="heading">CodeHelp Blogs</h2>
+            <p id="desc">Utilize this space to incorporate a captivating subheading crafted bu chatgpt, adding depth and intrigue to your blog.</p>
+        </div>
+        <div class="grid_container">
+            
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://random-image-pepebigotes.vercel.app/api/random-image" alt="not supported">
+                </div>
+                <div class="para_container">
+                    <a href="#"><h2>New Gadget Released</h2></a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, incidunt voluptates recusandae saepe totam voluptatibus.</p>
+                </div>
+                <div class="avtar_container">
+                    <div class="avatar">
+                        <div class="avtar_image">
+                            <img src=" https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="not supported">                            
+                        </div>
+                        <div class="avtar_text">
+                            <h4 id="avtar_head">John Doe</h4>
+                            <p id="para_avtar">Sept 19,2025</p>
+                        </div>
+                    </div>
+                    <div class="avatar_container_text">
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+<!-- https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64 -->
+<!-- https://random-image-pepebigotes.vercel.app/api/random-image -->

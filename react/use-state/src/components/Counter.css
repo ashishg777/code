@@ -1,0 +1,10 @@
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5 rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+}
